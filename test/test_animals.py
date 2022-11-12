@@ -15,3 +15,7 @@ class TestAnimals(unittest.TestCase):
     def test_dog_says_woof(self):
         dog = Dog("Bob")
         self.assertEqual("Woof", dog.speak())
+
+    def test_dog_says_woof_with_name(self):
+        dog = Dog("Bob")
+        self.assertEqual("Woof I'm Bob", dog.introduce_yourself())
