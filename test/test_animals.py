@@ -1,5 +1,6 @@
 import unittest
 from app.cat import Cat
+from app.dog import Dog
 
 class TestAnimals(unittest.TestCase):
 
@@ -10,3 +11,7 @@ class TestAnimals(unittest.TestCase):
     def test_cat_says_meow(self):
         cat = Cat("Floofy")
         self.assertEqual("Meow", cat.speak())
+
+    def test_dog_says_woof(self):
+        dog = Dog("Bob")
+        self.assertEqual("Woof", dog.speak())
